@@ -1,0 +1,552 @@
+{
+  "es": {
+    "services": [
+      {
+        "name": "Desarrollo de Sitios Web",
+        "icon": "./Images/WebSiteDesingDibujado.png",
+        "detail": "Con conocimientos en HTML5, JavaScript, CSS3, Bootstrap, React, y Node.js, servicio de desarrollo web para sitios web y aplicaciones web interactivas.",
+        "id": 1
+      },
+      {
+        "name": "Desarrollo de aplicaciones móviles",
+        "icon": "./Images/caja-50.png",
+        "detail": "Crear aplicaciones móviles para Android utilizando Android Studio con Dart y Flutter.",
+        "id": 2
+      },
+      {
+        "name": "Programación en Python",
+        "icon": "./Images/monitorBussinesDibujado.png",
+        "detail": "Servicios de desarrollo de software utilizando Python para diversas aplicaciones, como automatización, análisis de datos y desarrollo web con frameworks como Django.",
+        "id": 3
+      },
+      {
+        "name": "Desarrollo de aplicaciones en tiempo real",
+        "icon": "./Images/WebSiteDesingDibujado.png",
+        "detail": "Construir aplicaciones en tiempo real, como aplicaciones de chat, asistencia online con geolocalización, sistemas de seguimiento en tiempo real y más.",
+        "id": 4
+      },
+      {
+        "name": "Gestión de bases de datos",
+        "icon": "./Images/caja-50.png",
+        "detail": "Con MySQL y Firebase, servicios de diseño, administración y mantenimiento de bases de datos.",
+        "id": 5
+      },
+      {
+        "name": "Automatización y scripting",
+        "icon": "./Images/monitorBussinesDibujado.png",
+        "detail": "Automatizar tareas y procesos en sistemas Windows como Linux",
+        "id": 6
+      }
+    ],
+    "works": [
+      {
+        "name": "ras",
+        "icon": "./Images/WebSiteDesingDibujado.png",
+        "link": "",
+        "id": 1
+      },
+      {
+        "name": "ras1",
+        "icon": "./Images/caja-50.png",
+        "link": "",
+        "id": 2
+      },
+      {
+        "name": "ras2",
+        "icon": "./Images/monitorBussinesDibujado.png",
+        "link": "",
+        "id": 3
+      },
+      {
+        "name": "ras4",
+        "icon": "./Images/WebSiteDesingDibujado.png",
+        "link": "",
+        "id": 4
+      },
+      {
+        "name": "ras5",
+        "icon": "./Images/caja-50.png",
+        "link": "",
+        "id": 5
+      },
+      {
+        "name": "ras6",
+        "icon": "./Images/monitorBussinesDibujado.png",
+        "link": "",
+        "id": 6
+      }
+    ],
+    "resumeExperience": [
+      {
+        "name": "Desempleado",
+        "company": "",
+        "details": "",
+        "date": " 07/2023 - Actualidad ",
+        "status": "Freelancer",
+        "id": 1
+      },
+      {
+        "name": "Desarrollador - Full Stack",
+        "company": "Red Maker",
+        "details": "Enseñanza de programación en Arduino",
+        "date": " 04/2023 - 06/2023 ",
+        "status": "",
+        "id": 1
+      },
+      {
+        "name": "Desarrollador - Full Stack",
+        "company": "SUKA Grupo",
+        "details": "Desarrollador Python - PyQt5 - Mysql",
+        "date": " 01/2022 - 06/2022 ",
+        "status": "",
+        "id": 2
+      },
+      {
+        "name": "Administratico diagnóstico por imagen",
+        "company": "Instituto Cardiólogico de Corrientes",
+        "details": "administración de inventario, uso de sistema administrativo complejo, registro de transacción, atención al público, facturación, etc. / 1 persona a cargo / Capacitación / Organización / Manejo de Caja",
+        "date": " 08/2017 - 12/2021 ",
+        "status": "",
+        "id": 3
+      }
+    ],
+    "resumeEducation": [
+      {
+        "name": "Desarrollo Web con React - Node.js",
+        "modality": "Online",
+        "study": "Silicon Misiones - UTN",
+        "date": " 02/2023 - 04/2023 ",
+        "status": "Cursando",
+        "id": 0
+      },
+      {
+        "name": "Testing QA - Arg. Prog.",
+        "modality": "Online",
+        "study": "Argentina Programa - UTN",
+        "date": " 02/2023 - 04/2023 ",
+        "status": "Graduado",
+        "id": 1
+      },
+      {
+        "name": "Java Full stack - Arg. Prog.",
+        "modality": "Online",
+        "study": "Argentina Programa - UTN",
+        "date": " 02/2023 - 04/2023 ",
+        "status": "Graduado",
+        "id": 2
+      },
+      {
+        "name": "Silicon Misiones Desarrollo Full Stack Parte 1: HTML, CSS y JS",
+        "modality": "Online",
+        "study": "Silicon Misiones - UTN",
+        "date": " 02/2023 - 04/2023 ",
+        "status": "Graduado",
+        "id": 3
+      },
+      {
+        "name": "Programación desde Cero",
+        "modality": "Online",
+        "study": "EGG",
+        "date": " 08/2022 - 02/2023 ",
+        "status": "Graduado",
+        "id": 4
+      },
+      {
+        "name": "Programación desde Cero",
+        "modality": "Online",
+        "study": "Silicon Misiones",
+        "date": " 11/2022 - 12/2022 ",
+        "status": "Graduado",
+        "id": 5
+      },
+      {
+        "name": "Técnico Informático",
+        "modality": "Online",
+        "study": "Escuela Superior Tecnica",
+        "date": " 02/2015 - 12/2017 ",
+        "status": "Graduado",
+        "id": 6
+      },
+      {
+        "name": "Ingeniería Electrónica",
+        "modality": "Online",
+        "study": "UNAM Univ. Nac. de Misiones",
+        "date": " 03/2010 - 09/2023 ",
+        "status": "Abandonado",
+        "id": 7
+      },
+      {
+        "name": "Técnico Electromecanico",
+        "modality": "Online",
+        "study": "Escuela Tecnica Nº 7",
+        "date": " 02/2004 - 12/2009 ",
+        "status": "Graduado",
+        "id": 8
+      },
+      {
+        "name": "Conocimientos Varios",
+        "modality": "Aumentar Conocimientos por Gusto en la automatización / Introducción a la Cyber Seguridad - Red Team / Python - Full Stack - Php - Full Stack - Edición Web / Bash - Scripting - Full Stack / Office - Nivel Intermedio - Avanzado",
+        "study": "Autodidacta",
+        "date": " 2010 - Actualidad ",
+        "status": "Aprendiendo",
+        "id": 9
+      }
+    ],
+    "clients": [
+      {
+        "name": "Goldline",
+        "icon": "./Images/WebSiteDesingDibujado.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 1
+      },
+      {
+        "name": "Venture",
+        "icon": "./Images/caja-50.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 2
+      },
+      {
+        "name": "Circle",
+        "icon": "./Images/monitorBussinesDibujado.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 3
+      },
+      {
+        "name": "Velocity",
+        "icon": "./Images/WebSiteDesingDibujado.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 4
+      },
+      {
+        "name": "UTOSIA",
+        "icon": "./Images/caja-50.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 5
+      },
+      {
+        "name": "ZTOS",
+        "icon": "./Images/monitorBussinesDibujado.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 6
+      },
+      {
+        "name": "ASGARDIA",
+        "icon": "./Images/caja-50.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 7
+      },
+      {
+        "name": "Treva",
+        "icon": "./Images/monitorBussinesDibujado.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 8
+      }
+    ],
+    "contact": [
+      {
+        "name": "Dirección",
+        "icon": "./Images/iconContact/mapa-32.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 1
+      },
+      {
+        "name": "Teléfono",
+        "icon": "./Images/iconContact/telefono-32.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 2
+      },
+      {
+        "name": "Correo Electrónico",
+        "icon": "./Images/iconContact/mensaje-48.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 3
+      },
+      {
+        "name": "Trabajo Freelance",
+        "icon": "./Images/iconContact/comprobado-48.png",
+        "detail": "Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 4
+      }
+    ],
+    "toast": {
+      "title": "Formulario Enviado.",
+      "description": "Responderemos a la brevedad. Saludos.",
+      "id": 1
+    }
+  },
+  "en": {
+    "services": [
+      {
+        "name": "Website Development",
+        "icon": "./Images/WebSiteDesingDibujado.png",
+        "detail": "With knowledge in HTML5, JavaScript, CSS3, Bootstrap, React, and Node.js, I offer web development services for interactive websites and web applications.",
+        "id": 1
+      },
+      {
+        "name": "Mobile App Development",
+        "icon": "./Images/caja-50.png",
+        "detail": "Create mobile applications for Android using Android Studio with Dart and Flutter.",
+        "id": 2
+      },
+      {
+        "name": "Python Programming",
+        "icon": "./Images/monitorBussinesDibujado.png",
+        "detail": "Software development services using Python for various applications, including automation, data analysis, and web development with frameworks like Django.",
+        "id": 3
+      },
+      {
+        "name": "Real-time Application Development",
+        "icon": "./Images/WebSiteDesingDibujado.png",
+        "detail": "Build real-time applications, such as chat applications, online assistance with geolocation, real-time tracking systems, and more.",
+        "id": 4
+      },
+      {
+        "name": "Database Management",
+        "icon": "./Images/WebSiteDesingDibujado.png",
+        "detail": "With MySQL and Firebase, I offer database design, administration, and maintenance services.",
+        "id": 5
+      },
+      {
+        "name": "Automation and Scripting",
+        "icon": "./Images/WebSiteDesingDibujado.png",
+        "detail": "Automate tasks and processes on both Windows and Linux systems.",
+        "id": 6
+      }
+    ],
+    "works": [
+      {
+        "name": "ras",
+        "icon": "./Images/caja-50.png",
+        "link": "",
+        "id": 1
+      },
+      {
+        "name": "ras1",
+        "icon": "./Images/caja-50.png",
+        "link": "",
+        "id": 2
+      },
+      {
+        "name": "ras2",
+        "icon": "./Images/caja-50.png",
+        "link": "",
+        "id": 3
+      },
+      {
+        "name": "ras4",
+        "icon": "./Images/caja-50.png",
+        "link": "",
+        "id": 4
+      },
+      {
+        "name": "ras5",
+        "icon": "./Images/caja-50.png",
+        "link": "",
+        "id": 5
+      },
+      {
+        "name": "ras6",
+        "icon": "./Images/caja-50.png",
+        "link": "",
+        "id": 6
+      }
+    ],
+    "resumeExperience": [
+      {
+        "name": "Unemployed",
+        "company": "",
+        "details": "",
+        "date": "07/2023 - Present",
+        "status": "Freelancer",
+        "id": 1
+      },
+      {
+        "name": "Full Stack Developer",
+        "company": "Red Maker",
+        "details": "Teaching Arduino programming",
+        "date": "04/2023 - 06/2023",
+        "status": "",
+        "id": 1
+      },
+      {
+        "name": "Full Stack Developer",
+        "company": "SUKA Group",
+        "details": "Python Developer - PyQt5 - MySQL",
+        "date": "01/2022 - 06/2022",
+        "status": "",
+        "id": 2
+      },
+      {
+        "name": "Diagnostic Imaging Administrator",
+        "company": "Instituto Cardiólogico de Corrientes",
+        "details": "Inventory management, use of complex administrative system, transaction recording, customer service, billing, etc. / 1 subordinate / Training / Organization / Cash handling",
+        "date": "08/2017 - 12/2021",
+        "status": "",
+        "id": 3
+      }
+    ],
+    "resumeEducation": [
+      {
+        "name": "Web Development with React - Node.js",
+        "modality": "Online",
+        "study": "Silicon Misiones - UTN",
+        "date": "02/2023 - 04/2023",
+        "status": "In Progress",
+        "id": 0
+      },
+      {
+        "name": "QA Testing - Arg. Prog.",
+        "modality": "Online",
+        "study": "Argentina Program - UTN",
+        "date": "02/2023 - 04/2023",
+        "status": "Graduated",
+        "id": 1
+      },
+      {
+        "name": "Java Full Stack - Arg. Prog.",
+        "modality": "Online",
+        "study": "Argentina Program - UTN",
+        "date": "02/2023 - 04/2023",
+        "status": "Graduated",
+        "id": 2
+      },
+      {
+        "name": "Silicon Misiones Full Stack Development Part 1: HTML, CSS, and JS",
+        "modality": "Online",
+        "study": "Silicon Misiones - UTN",
+        "date": "02/2023 - 04/2023",
+        "status": "Graduated",
+        "id": 3
+      },
+      {
+        "name": "Programming from Scratch",
+        "modality": "Online",
+        "study": "EGG",
+        "date": "08/2022 - 02/2023",
+        "status": "Graduated",
+        "id": 4
+      },
+      {
+        "name": "Programming from Scratch",
+        "modality": "Online",
+        "study": "Silicon Misiones",
+        "date": "11/2022 - 12/2022",
+        "status": "Graduated",
+        "id": 5
+      },
+      {
+        "name": "Computer Technician",
+        "modality": "Online",
+        "study": "Escuela Superior Tecnica",
+        "date": "02/2015 - 12/2017",
+        "status": "Graduated",
+        "id": 6
+      },
+      {
+        "name": "Electronic Engineering",
+        "modality": "Online",
+        "study": "UNAM - National University of Misiones",
+        "date": "03/2010 - 09/2023",
+        "status": "Dropped Out",
+        "id": 7
+      },
+      {
+        "name": "Electromechanical Technician",
+        "modality": "Online",
+        "study": "Technical School No. 7",
+        "date": "02/2004 - 12/2009",
+        "status": "Graduated",
+        "id": 8
+      },
+      {
+        "name": "Various Skills",
+        "modality": "Self-taught",
+        "study": "Increasing knowledge for personal interest in automation / Introduction to Cybersecurity - Red Team / Python - Full Stack - Php - Full Stack - Web Editing / Bash - Scripting - Full Stack / Office - Intermediate - Advanced",
+        "date": "2010 - Present",
+        "status": "Learning",
+        "id": 9
+      }
+    ],
+    "clients": [
+      {
+        "name": "Goldline",
+        "icon": "./Images/WebSiteDesignDrawn.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 1
+      },
+      {
+        "name": "Venture",
+        "icon": "./Images/box-50.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 2
+      },
+      {
+        "name": "Circle",
+        "icon": "./Images/monitorBusinessDrawn.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 3
+      },
+      {
+        "name": "Velocity",
+        "icon": "./Images/WebSiteDesignDrawn.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 4
+      },
+      {
+        "name": "UTOSIA",
+        "icon": "./Images/box-50.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 5
+      },
+      {
+        "name": "ZTOS",
+        "icon": "./Images/monitorBusinessDrawn.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 6
+      },
+      {
+        "name": "ASGARDIA",
+        "icon": "./Images/box-50.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 7
+      },
+      {
+        "name": "Treva",
+        "icon": "./Images/monitorBusinessDrawn.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 8
+      }
+    ],
+    "contact": [
+      {
+        "name": "Address",
+        "icon": "./Images/iconContact/map-32.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 1
+      },
+      {
+        "name": "Phone",
+        "icon": "./Images/iconContact/phone-32.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 2
+      },
+      {
+        "name": "Email",
+        "icon": "./Images/iconContact/email-48.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 3
+      },
+      {
+        "name": "Freelance Work",
+        "icon": "./Images/iconContact/check-48.png",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae massa morbi",
+        "id": 4
+      }
+    ],
+    "toast": {
+      "title": "Form Submitted.",
+      "description": "We will respond shortly. Regards.",
+      "id": 1
+    }
+  }
+}
