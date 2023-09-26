@@ -4,7 +4,7 @@ import style from './HomeStyle'; // Importa los estilos desde un archivo externo
 
 import { ChakraProvider, Box, Text, Flex, Image, HStack, Link } from '@chakra-ui/react'; // Importa componentes de Chakra UI
 
-import perfil from '../Images/perfil2.png';
+import perfil from '/Images/perfil2.png';
 
 import translations from '../Languages/Translations';
 import { Redes } from '../Redes/Redes';

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, HStack, Box } from '@chakra-ui/react'; // Importa el componente Box desde Chakra UI
 
-import linkedin from '../Images/Social/icons8-linkedin.svg';
-import gmail from '../Images/Social/icons8-gmail.svg';
-import github from '../Images/Social/icons8-github.svg';
+import linkedin from '/Images/Social/icons8-linkedin.svg';
+import gmail from '/Images/Social/icons8-gmail.svg';
+import github from '/Images/Social/icons8-github.svg';
 
 const Redes = () => {
     const Icono = ({ src }) => {

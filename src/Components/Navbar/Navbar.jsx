@@ -19,7 +19,7 @@ const Navbar = ({ currentLanguage, onChangeLanguage }) => {
                 position="fixed"top="0" left="0" right="0" zIndex="3">
                     <Stack direction="row" spacing="4" align="center" ml="1vw" mt="0.5em" display={{ base: 'flex', lg: 'none' }}>
                         <Link href="#" style={style.linksMenu} sx={{ color: 'white', fontWeight: 'bold', ml: '1vh', fontSize: '20', display: 'flex', alignItems: 'center' }}>
-                        <img src='vite.png' alt='Logo' width='20px' height='20px' style={{ marginRight: '0.5rem' }} />
+                        <img src='vite.png' alt='Logo' width='20px' height='10px' style={{ marginRight: '0.5rem' }} />
                             {translations[currentLanguage]['FORSTR']}
                         </Link>
                         <Spacer />
@@ -41,7 +41,7 @@ const Navbar = ({ currentLanguage, onChangeLanguage }) => {
                     <Flex pt="1" ml="5vw" alignItems="center" textAlign='' display={{ base: 'none', lg: 'flex' }}>
                         <Link href="#" sx={{ color: 'white', fontWeight: 'bold', fontSize: '20' }} style={style.links}>
                             <Flex>
-                                <img src='vite.png' alt='Logo' width='20px' height='20px' style={{ marginRight: '0.5rem' }}></img>
+                                <img src='vite.png' alt='Logo' width='30px' height='10px' style={{ marginRight: '0.5rem' }}></img>
                                 {translations[currentLanguage]['FORSTR']}
                             </Flex>
                         </Link>

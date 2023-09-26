@@ -307,7 +307,7 @@ const Contact = ({ currentLanguage }) => {
                                                 ml='1'
                                                 textAlign='center'
                                                 alignItems='center'
-                                                src='./Images/iconContact/enviado-32.png'
+                                                src='/Images/IconContact/enviado-32.png'
                                                 h='5' /> </Button>
                                     </Box>
                                 </Flex>
