@@ -56,7 +56,7 @@ const Resume = ({currentLanguage}) => {
                                 <Flex flexDirection="column" flex="1" p={4}>
                                     <Flex align="left" flexDirection="column" textAlign="left" mb="4vh" ml='.1em' >
                                         <Text as='h2' color='WHITE' >{translations[currentLanguage]['Job Experience']}</Text>
-                                        <Text color='red' fontSize="15">2017 - 2023</Text>
+                                        <Text color='red' fontSize="15">{translations[currentLanguage]['totalDateExperience']}</Text>
                                     </Flex>
                                     {cardServiceEx.map((card, index) => (
                                         <Flex key={index} alignItems='stretch'>
@@ -109,7 +109,7 @@ const Resume = ({currentLanguage}) => {
                                                     {card.name}
                                                 </Text>
                                                 <Text color="#71777c" fontSize="18px">
-                                                    {card.company} ({card.date})
+                                                    {card.company} ( {card.date} )
                                                 </Text>
                                                 <Text color="#71777c" fontSize="15px">
                                                     {card.details}
@@ -127,7 +127,7 @@ const Resume = ({currentLanguage}) => {
                                 <Flex flexDirection="column" flex="1" p={4}>
                                     <Flex align="left" flexDirection="column" textAlign="left" mb="4vh" ml='.1em'>
                                         <Text as='h2' color='WHITE' >{translations[currentLanguage]['Education Quality']}</Text>
-                                        <Text color='red' fontSize="15">2004 - 2023</Text>
+                                        <Text color='red' fontSize="15">{translations[currentLanguage]['dateTotalEducation']}</Text>
                                     </Flex>
                                     {cardServiceEd.map((card, index) => (
                                         <Flex key={index} alignItems='stretch'>

@@ -115,7 +115,7 @@
         "name": "Desarrollo Web con React - Node.js",
         "modality": "Online",
         "study": "Silicon Misiones - UTN",
-        "date": " 02/2023 - 04/2023 ",
+        "date": "02/2023 - 04/2023",
         "status": "Cursando",
         "id": 0
       },
@@ -123,7 +123,7 @@
         "name": "Testing QA - Arg. Prog.",
         "modality": "Online",
         "study": "Argentina Programa - UTN",
-        "date": " 02/2023 - 04/2023 ",
+        "date": "02/2023 - 04/2023",
         "status": "Graduado",
         "id": 1
       },
@@ -131,7 +131,7 @@
         "name": "Java Full stack - Arg. Prog.",
         "modality": "Online",
         "study": "Argentina Programa - UTN",
-        "date": " 02/2023 - 04/2023 ",
+        "date": "02/2023 - 04/2023",
         "status": "Graduado",
         "id": 2
       },
@@ -139,7 +139,7 @@
         "name": "Silicon Misiones Desarrollo Full Stack Parte 1: HTML, CSS y JS",
         "modality": "Online",
         "study": "Silicon Misiones - UTN",
-        "date": " 02/2023 - 04/2023 ",
+        "date": "02/2023 - 04/2023",
         "status": "Graduado",
         "id": 3
       },
@@ -147,7 +147,7 @@
         "name": "Programación desde Cero",
         "modality": "Online",
         "study": "EGG",
-        "date": " 08/2022 - 02/2023 ",
+        "date": "08/2022 - 02/2023",
         "status": "Graduado",
         "id": 4
       },
@@ -155,7 +155,7 @@
         "name": "Programación desde Cero",
         "modality": "Online",
         "study": "Silicon Misiones",
-        "date": " 11/2022 - 12/2022 ",
+        "date": "11/2022 - 12/2022",
         "status": "Graduado",
         "id": 5
       },
@@ -163,7 +163,7 @@
         "name": "Técnico Informático",
         "modality": "Online",
         "study": "Escuela Superior Tecnica",
-        "date": " 02/2015 - 12/2017 ",
+        "date": "02/2015 - 12/2017",
         "status": "Graduado",
         "id": 6
       },
@@ -171,7 +171,7 @@
         "name": "Ingeniería Electrónica",
         "modality": "Online",
         "study": "UNAM Univ. Nac. de Misiones",
-        "date": " 03/2010 - 09/2023 ",
+        "date": "03/2010 - 09/2014",
         "status": "Abandonado",
         "id": 7
       },
@@ -179,7 +179,7 @@
         "name": "Técnico Electromecanico",
         "modality": "Online",
         "study": "Escuela Tecnica Nº 7",
-        "date": " 02/2004 - 12/2009 ",
+        "date": "02/2004 - 12/2009",
         "status": "Graduado",
         "id": 8
       },
@@ -187,7 +187,7 @@
         "name": "Conocimientos Varios",
         "modality": "Aumentar Conocimientos por Gusto en la automatización / Introducción a la Cyber Seguridad - Red Team / Python - Full Stack - Php - Full Stack - Edición Web / Bash - Scripting - Full Stack / Office - Nivel Intermedio - Avanzado",
         "study": "Autodidacta",
-        "date": " 2010 - Actualidad ",
+        "date": "2010 - Actualidad",
         "status": "Aprendiendo",
         "id": 9
       }
@@ -426,7 +426,7 @@
         "name": "Electronic Engineering",
         "modality": "Online",
         "study": "UNAM - National University of Misiones",
-        "date": "03/2010 - 09/2023",
+        "date": "03/2010 - 09/2014",
         "status": "Dropped Out",
         "id": 7
       },

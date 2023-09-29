@@ -8,8 +8,10 @@ const style={
         margin: '0 auto',
         mx: 'auto',
         pb:'3em',
-    
     },
+    cardStyle:{
+        
+    }
 
 }
 

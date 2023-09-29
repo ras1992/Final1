@@ -15,7 +15,7 @@ const Footer = ({ currentLanguage }) => {
         <ChakraProvider>
             <Box sx={style.body} textAlign='center' alignItems='center' pt='10'>
                 <Text justifyContent="center" sx={{ color: 'white', fontWeight: 'bold', ml: '1vh', fontSize: '20', display: 'flex', alignItems: 'center' }}>
-                <img src='vite.png' alt='Logo' width='20px' height='20px' style={{ marginRight: '0.5rem' }} />
+                <img  src='vite.png' alt='Logo' style={{ width:'20px', height:'20px', marginRight: '0.5rem' }} />
                     {translations[currentLanguage]['FORSTR']}
                 </Text>
                 <Box display="flex" justifyContent="center" alignItems="center">

@@ -23,7 +23,7 @@ const style = {
         pt:'1.5vh',
         maxW:'15em',
         maxH:'20em',
-        borderRadius: '18px',
+        borderRadius: '8px',
     },
 
 

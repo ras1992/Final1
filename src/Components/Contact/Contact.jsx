@@ -43,9 +43,9 @@ const Contact = ({ currentLanguage }) => {
                     <form onSubmit={handleSubmit}>
                         <Flex sx={style.body} pt={{ base: '5em', md: '5em' }} pl={{ base: '3vw', md: '5vw' }} pr={{ base: '3vw', md: '5vw' }} flexDirection='column' >
 
-                            <Flex align="center" flexDirection="column" textAlign="center" mb="4vh">
+                            <Flex sx={{ align: "center", flexDirection: "column", textAlign: "center", mb: "4vh" }}>
                                 <Text color='red' fontSize="md">{translations[currentLanguage]['CONTACT']}</Text>
-                                <Text as="h1" fontWeight="bold" color='white' fontSize="60">{translations[currentLanguage]['Contact With Me']}</Text>
+                                <Text sx={{ as: "h1", fontWeight: "bold", color: 'white', fontSize: "60" }}>{translations[currentLanguage]['Contact With Me']}</Text>
                             </Flex>
 
                             <Flex justifyContent="space-between" flexDirection={{ base: 'column', md: 'row' }}>
@@ -56,17 +56,19 @@ const Contact = ({ currentLanguage }) => {
                                     {cardService.map((card, index) => (
                                         <Box
                                             key={index}
-                                            p="1em"
-                                            mb={index === cardService.length - 1 ? '0' : '1.5em'} // Aplica '0' para el último elemento, '1.5em' para los demás
-                                            minW='20em'
-                                            bg="red"
-                                            borderColor="#21282b"
-                                            borderRadius="10px"
-                                            overflow="hidden"
-                                            filter="blur(0.5px)"
-                                            boxShadow="4px 4px 8px rgba(0, 0, 0, 0.5)"
-                                            style={{
-                                                background: 'linear-gradient(140deg, #21282b, #1b1b1c)',
+                                            mb={index === cardService.length - 1 ? '0' : '1.5em'}
+                                            sx={{
+                                                p: "1em",
+
+                                                minW: '20em',
+                                                bg: "red",
+                                                borderColor: "#21282b",
+                                                borderRadius: "10px",
+                                                overflow: "hidden",
+                                                filter: "blur(0.5px)",
+                                                boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+
+                                                background: "linear-gradient(140deg, #21282b, #1b1b1c)",
                                                 textAlign: 'center',
                                                 display: 'flex',
                                                 flexDirection: 'column',
@@ -84,24 +86,25 @@ const Contact = ({ currentLanguage }) => {
 
                                 {/* Columna Verde */}
                                 <Flex
-                                    flexDirection='column' // Cambia la dirección de la flexión en pantallas más grandes
-                                    bg='green'
-                                    borderRadius="10px"
-                                    p={9}
-                                    pt={12}
-                                    mt={{ base: '1.5em', md: '0' }}
-                                    mb={{ base: '1.5em', md: '0' }}
-                                    ml={{ base: '0', md: '1.5em' }}
-                                    w='100%'
 
-
-                                    overflow="hidden"
-                                    style={{
-                                        background: 'linear-gradient(140deg, #21282b, #1b1b1c)',
+                                    sx={{
+                                        flexDirection: 'column',
+                                        bg: 'green',
+                                        borderRadius: "10px",
+                                        p: 9,
+                                        pt: 12,
+                                        mt: { base: '1.5em', md: '0' },
+                                        mb: { base: '1.5em', md: '0' },
+                                        ml: { base: '0', md: '1.5em' },
+                                        w: '100%',
+                                        overflow: "hidden",
+                                        background: "linear-gradient(140deg, #21282b, #1b1b1c)",
                                         boxShadow: "4px 4px 20px rgba(0, 0, 0, 0.5)",
                                         display: 'flex',
-                                        justifyContent: 'center', // Centra horizontalmente
+                                        justifyContent: 'center',
+
                                     }}
+
                                 >
                                     <Box
 
@@ -116,13 +119,13 @@ const Contact = ({ currentLanguage }) => {
                                                 id="name"
                                                 type="text"
                                                 name="name"
-                                                color='white'
-                                                bg='#171818'
-                                                alignContent='center'
-                                                borderColor='#171818'
                                                 placeholder={translations[currentLanguage]['Name']}
                                                 sx={{
                                                     ...style.textPlaceholder,
+                                                    color: 'white',
+                                                    bg: '#171818',
+                                                    alignContent: 'center',
+                                                    borderColor: '#171818',
 
                                                     '&:hover': {
                                                         borderColor: '#303134', // Cambia el color de borde en hover
@@ -145,12 +148,12 @@ const Contact = ({ currentLanguage }) => {
                                                 id="phone"
                                                 type="phone"
                                                 name="phone"
-                                                color='white'
-                                                bg='#171818'
-                                                alignContent='center'
-                                                borderColor='#171818'
                                                 placeholder={translations[currentLanguage]['Phone']}
                                                 sx={{
+                                                    color: 'white',
+                                                    bg: '#171818',
+                                                    alignContent: 'center',
+                                                    borderColor: '#171818',
                                                     ...style.textPlaceholder,
 
                                                     '&:hover': {
@@ -184,12 +187,12 @@ const Contact = ({ currentLanguage }) => {
                                                 id="email"
                                                 type="email"
                                                 name="email"
-                                                color='white'
-                                                bg='#171818'
-                                                alignContent='center'
-                                                borderColor='#171818'
                                                 placeholder={translations[currentLanguage]['Email']}
                                                 sx={{
+                                                    color: 'white',
+                                                    bg: '#171818',
+                                                    alignContent: 'center',
+                                                    borderColor: '#171818',
                                                     ...style.textPlaceholder,
 
                                                     '&:hover': {
@@ -214,12 +217,13 @@ const Contact = ({ currentLanguage }) => {
                                                 id="subject"
                                                 type="text"
                                                 name="subject"
-                                                color='white'
-                                                bg='#171818'
-                                                alignContent='center'
-                                                borderColor='#171818'
+
                                                 placeholder={translations[currentLanguage]['Subject']}
                                                 sx={{
+                                                    color: 'white',
+                                                    bg: '#171818',
+                                                    alignContent: 'center',
+                                                    borderColor: '#171818',
                                                     ...style.textPlaceholder,
 
                                                     '&:hover': {
@@ -251,13 +255,14 @@ const Contact = ({ currentLanguage }) => {
                                             <Textarea
                                                 id="message"
                                                 name="message"
-                                                bg='#171818'
-                                                borderColor='#171818'
-                                                color='white'
                                                 type="message"
                                                 placeholder={translations[currentLanguage]['Message']}
-                                                textAlign='left' // Alinea el texto a la izquierda
+
                                                 sx={{
+                                                    textAlign: 'left',
+                                                    bg: '#171818',
+                                                    borderColor: '#171818',
+                                                    color: 'white',
                                                     ...style.textPlaceholder,
                                                     width: '100%', // Ancho al 100%
                                                     height: '100%', // Altura al 100%
@@ -283,18 +288,19 @@ const Contact = ({ currentLanguage }) => {
                                         <Button
                                             onClick={() =>
                                                 toast({
-                                                title: toastMsg.title,
-                                                description: toastMsg.description,
-                                                status: 'success',
-                                                duration: 9000,
-                                                isClosable: true,
+                                                    title: toastMsg.title,
+                                                    description: toastMsg.description,
+                                                    status: 'success',
+                                                    duration: 9000,
+                                                    isClosable: true,
                                                 })
                                             }
 
                                             type="submit"
-                                            bg='#171818'
-                                            color='#567f95'
+
                                             sx={{
+                                                bg: '#171818',
+                                                color: '#567f95',
                                                 '&:hover': {
                                                     borderColor: '#303134',
                                                     bg: '#303134'
@@ -304,11 +310,13 @@ const Contact = ({ currentLanguage }) => {
                                             {translations[currentLanguage]['Send Message']}
 
                                             <Image
-                                                ml='1'
-                                                textAlign='center'
-                                                alignItems='center'
-                                                src='/Images/IconContact/enviado-32.png'
-                                                h='5' /> </Button>
+                                                sx={{
+                                                    ml: '1',
+                                                    textAlign: 'center',
+                                                    alignItems: 'center',
+                                                    src: '/Images/IconContact/enviado-32.png',
+                                                    h: '5',
+                                                }} /> </Button>
                                     </Box>
                                 </Flex>
                             </Flex>

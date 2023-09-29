@@ -39,6 +39,7 @@ function App() {
         <Contact currentLanguage={currentLanguage}></Contact>
         <Line></Line>
         <Footer currentLanguage={currentLanguage}></Footer>
+        
       </Box>
     </>
   )

@@ -17,15 +17,15 @@ const Navbar = ({ currentLanguage, onChangeLanguage }) => {
             <ChakraProvider>
                 <Box sx={style.body} 
                 position="fixed"top="0" left="0" right="0" zIndex="3">
-                    <Stack direction="row" spacing="4" align="center" ml="1vw" mt="0.5em" display={{ base: 'flex', lg: 'none' }}>
+                    <Stack direction="row" sx={{ spacing:"4", align:"center", ml:"1vw", mt:"0.5em"}} display={{ base: 'flex', lg: 'none' }}>
                         <Link href="#" style={style.linksMenu} sx={{ color: 'white', fontWeight: 'bold', ml: '1vh', fontSize: '20', display: 'flex', alignItems: 'center' }}>
-                        <img src='vite.png' alt='Logo' width='20px' height='10px' style={{ marginRight: '0.5rem' }} />
+                        <img src='vite.png' alt='Logo' width='20px' height='10px' style={{ mr: '0.5rem', ml: '0.5rem' }} />
                             {translations[currentLanguage]['FORSTR']}
                         </Link>
                         <Spacer />
                         <Button onClick={toggleDrawer} variant="outline" colorScheme="red" size="sm"
                             sx={{
-                                borderRadius: 30,
+                                borderRadius: 8,
                                 mr: '3vh',
                                 _hover: {
                                     color: 'white',
@@ -71,7 +71,7 @@ const Navbar = ({ currentLanguage, onChangeLanguage }) => {
                         </Flex>
                         <Spacer />
                         <WrapItem>
-                            <Button backgroundColor="#d03049" sx={{ borderRadius: 30, mr: '5vw','&:hover': { borderColor: '#303134', bg: '#303134' },
+                            <Button backgroundColor="#d03049" sx={{ borderRadius: 8, mr: '5vw','&:hover': { borderColor: '#303134', bg: '#303134' },
                                     }} color='white'>{translations[currentLanguage]['DOWNLOAD CV']}</Button>
                         </WrapItem>
                     </Flex>

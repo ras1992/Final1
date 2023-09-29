@@ -19,12 +19,12 @@ const Home = ({ currentLanguage }) => {
             <ChakraProvider> {/* Proveedor de Chakra UI para estilos */}
                 <Box sx={style.body}> {/* Usa estilos definidos en style.body */}
                     <Flex
-                        direction={{ base: "column", md: "row" }} // Flexbox, dirección de columna en dispositivos pequeños y fila en dispositivos medianos
-                        alignItems="center" // Alinea elementos al centro verticalmente
-                        justifyContent="space-between" // Espacio entre elementos en la fila
-                        pl={{ base: '3vw', md: '5vw' }} // Relleno izquierdo en dispositivos pequeños y medianos
-                        pr={{ base: '5vw', md: '7.1vh' }} // Relleno derecho en dispositivos pequeños y medianos
-                        pt={{ base: '10vh', md: '10vh' }} // Relleno superior en dispositivos pequeños y medianos
+                        alignItems="center"
+                        justifyContent="space-between"
+                        direction={{ base: "column", md: "row" }}
+                        pl={{ base: '3vw', md: '5vw' }}
+                        pr={{ base: '5vw', md: '7.1vh' }}
+                        pt={{ base: '10vh', md: '10vh' }}
                     >
                         <Flex
                             flexGrow={{ base: 1, md: 1 }} // Factor de crecimiento flexible en dispositivos pequeños y medianos
@@ -32,7 +32,7 @@ const Home = ({ currentLanguage }) => {
                             alignItems="center" // Alinea elementos al centro verticalmente
                             pr={{ base: '1em', md: '2em' }} // Relleno derecho en dispositivos pequeños y medianos
                         >
-                            <Text color="white"> {/* Texto con color blanco */}
+                            <Text color="white">
 
                                 <h4>
                                     {translations[currentLanguage]['Hello']}, <Text color="#d03049" as="span"> {translations[currentLanguage]['I´m']} </Text> {/* Texto en rojo */}
@@ -85,28 +85,35 @@ const Home = ({ currentLanguage }) => {
                         >
                             <Box>
                                 <Box
-                                    bgColor="#1b1b26" // Fondo negro
-                                    borderRadius="15px" // Borde redondeado
-                                    position="relative" // Posición relativa
+
+                                    sx={{
+                                        bgColor: "#1b1b26",
+                                        borderRadius: "15px",
+                                        position: "relative",
+                                        w: "100%",
+                                    }}
+
                                     maxW={{ base: '39em', md: '39em' }} // Ancho máximo en dispositivos pequeños y medianos
-                                    w="100%" // Ancho del elemento
                                     h={{ base: '34em', md: '34em' }} // Alto del elemento
                                     maxHeight={{ base: '34em', md: 'none' }} // Altura máxima en dispositivos pequeños y sin límite en medianos
                                 >
                                     <Image
                                         src={perfil} // Muestra la imagen de perfil
                                         alt="Perfil" // Texto alternativo para la imagen
-                                        position="relative" // Posición relativa
                                         pl={{ base: '1vh', md: '1vw' }} // Relleno izquierdo en dispositivos pequeños y medianos
-                                        pr={{ base: '1vh', md: '1vw' }} // Relleno derecho en dispositivos pequeños y medianos
-                                        w="100%" // Ancho del elemento
-                                        h="700" // Alto del elemento
-                                        top={{ base: '-10em', md: '-10em' }} // Posición superior en dispositivos pequeños y medianos
-                                        left="0" // Posición izquierda
-                                        zIndex={1} // Índice de apilamiento
-                                        filter="auto" // Aplicar filtro automático (esto puede variar según tus necesidades)
-                                        brightness="90%" // Ajuste de brillo
-                                        contrast="120%" // Ajuste de contraste
+                                        pr={{ base: '1vh', md: '1vw' }}
+                                        top={{ base: '-10em', md: '-10em' }}
+                                        
+                                        sx={{
+                                            position: "relative",
+                                            w: "100%",
+                                            h: "700",
+                                            left: "0",
+                                            zIndex: 1,
+                                            filter: "auto",
+                                            brightness: "90%",
+                                            contrast: "120%",
+                                        }}
                                     />
                                 </Box>
                             </Box>
