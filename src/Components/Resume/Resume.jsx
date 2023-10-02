@@ -4,7 +4,7 @@ import { ChakraProvider, Box, Text, Flex, Center, Button, Image } from '@chakra-
 
 import translations from '../Languages/Translations';
 
-const Resume = ({currentLanguage}) => {
+const Resume = ({ currentLanguage }) => {
 
     const [cardServiceEd, setCardServiceEd] = useState([]); // Define un estado para almacenar la información de las tarjetas de trabajo
 
@@ -44,10 +44,10 @@ const Resume = ({currentLanguage}) => {
         <>
             <ChakraProvider>
                 <section id="Resume">
-                    <Flex sx={style.body} pt={{ base: '5em', md: '5em' }} pl={{ base: '3vw', md: '5vw' }} pr={{ base: '3vw', md: '5vw' }} flexDirection='column' >
+                    <Flex sx={style.body} flexDirection='column' >
                         <Flex align="center" flexDirection="column" textAlign="center" mb="4vh">
                             <Text color='red' fontSize="md">{translations[currentLanguage]['YEARS OF EXPERIENCE']}</Text>
-                            <Text as="h1" fontWeight="bold" color='white' fontSize="60">{translations[currentLanguage]['My Resume']}</Text>
+                            <Text as="h1" fontWeight="bold" color='white' fontSize={{ base: '40', md: '60' }}>{translations[currentLanguage]['My Resume']}</Text>
                         </Flex>
                         <Box >
                             <Flex flexDirection={{ base: 'column', md: 'row' }} paddingX={4} pb='5em'>
@@ -68,23 +68,8 @@ const Resume = ({currentLanguage}) => {
                                                         background: '#171818',
                                                     }}>
 
-                                                        <Box
-                                                            style={{
-                                                                transform: 'translateX(-4px) translateY(3em)',
-                                                                width: '10px',
-                                                                height: '10px',
-                                                                borderRadius: '10px',
-                                                                background: '#171818',
-                                                            }}
-                                                        >
-                                                            <Box style={{
-                                                                transform: 'translateX(3px) translateY(3.5px)',
-                                                                flexDirection: "row",
-                                                                width: '100px',
-                                                                position: 'absolute',
-                                                                height: '3px',
-                                                                background: '#171818',
-                                                            }}></Box>
+                                                        <Box style={style.cardLineB1}>
+                                                            <Box style={style.cardLineB2}></Box>
                                                         </Box>
                                                     </Box>
 
@@ -95,17 +80,9 @@ const Resume = ({currentLanguage}) => {
                                                 key={index}
                                                 p="10"
                                                 mb={index === cardServiceEx.length - 1 ? '0' : '2vh'}
-                                                bg="red"
-                                                flex="1"
-                                                borderColor="#21282b"
-                                                borderRadius="10px"
-                                                filter="blur(0.5px)"
-                                                boxShadow="4px 4px 8px rgba(0, 0, 0, 0.2)"
-                                                style={{
-                                                    background: 'linear-gradient(140deg, #21282b, #1b1b1c)',
-                                                }}
+                                                sx={style.cardData}
                                             >
-                                                <Text fontSize="4xl" color={(card.name) === 'Desempleado' || (card.name) === 'Unemployed' ? 'red.400' : 'white'} mt='-1.5vh' >
+                                                <Text fontSize={{ base: '20', md: '25' }} color={(card.name) === 'Desempleado' || (card.name) === 'Unemployed' ? 'red.400' : 'white'} mt='-1.5vh' >
                                                     {card.name}
                                                 </Text>
                                                 <Text color="#71777c" fontSize="18px">
@@ -114,7 +91,7 @@ const Resume = ({currentLanguage}) => {
                                                 <Text color="#71777c" fontSize="15px">
                                                     {card.details}
                                                 </Text>
-                                                <Text  mt='-1em' fontSize="xl" color={(card.status) === 'Freelancer' ? 'green.300' : 'orange.300'}>
+                                                <Text mt='-1em' fontSize="xl" color={(card.status) === 'Freelancer' ? 'green.300' : 'orange.300'}>
                                                     {card.status}
                                                 </Text>
                                             </Box>
@@ -138,45 +115,18 @@ const Resume = ({currentLanguage}) => {
                                                         height: '100%',
                                                         background: '#171818',
                                                     }}>
-
-                                                        <Box
-                                                            style={{
-                                                                transform: 'translateX(-4px) translateY(3em)',
-                                                                width: '10px',
-                                                                height: '10px',
-                                                                borderRadius: '10px',
-                                                                background: '#171818',
-                                                            }}
-                                                        >
-                                                            <Box style={{
-                                                                transform: 'translateX(3px) translateY(3.5px)',
-                                                                flexDirection: "row",
-                                                                width: '100px',
-                                                                position: 'absolute',
-                                                                height: '3px',
-                                                                background: '#171818',
-                                                            }}></Box>
+                                                        <Box style={style.cardLineB1}>
+                                                            <Box style={style.cardLineB2}></Box>
                                                         </Box>
                                                     </Box>
-
-
                                                 </Flex>
                                             }
                                             <Box
                                                 key={index}
-                                                p="10"
                                                 mb={index === cardServiceEd.length - 1 ? '0' : '2vh'}
-                                                bg="red"
-                                                flex="1"
-                                                borderColor="#21282b"
-                                                borderRadius="10px"
-                                                filter="blur(0.5px)"
-                                                boxShadow="4px 4px 8px rgba(0, 0, 0, 0.2)"
-                                                style={{
-                                                    background: 'linear-gradient(140deg, #21282b, #1b1b1c)',
-                                                }}
+                                                sx={style.cardData2}
                                             >
-                                                <Text fontSize="4xl" color="white" mt='-1.5vh'>
+                                                <Text fontSize={{ base: '20', md: '25' }} color="white" mt='-1.5vh'>
                                                     {card.name}
                                                 </Text>
                                                 <Text color="#71777c" mt='-1.2em' fontSize="15px">
@@ -185,7 +135,7 @@ const Resume = ({currentLanguage}) => {
                                                 <Text color="#71777c" fontSize="15px">
                                                     {card.modality}
                                                 </Text>
-                                                <Text  mt='-1em' fontSize="xl" color={(card.status) === 'Graduado' || (card.status) === 'Graduated' ? 'green.300' : (card.status) === 'Abandonado' || (card.status) === 'Dropped Out' ? 'red.400' : 'orange.300'}>
+                                                <Text mt='-1em' fontSize="xl" color={(card.status) === 'Graduado' || (card.status) === 'Graduated' ? 'green.300' : (card.status) === 'Abandonado' || (card.status) === 'Dropped Out' ? 'red.400' : 'orange.300'}>
                                                     {card.status}
                                                 </Text>
                                             </Box>

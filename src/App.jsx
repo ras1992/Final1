@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Flex, Box } from '@chakra-ui/react';
+import { Flex, Box, Divider } from '@chakra-ui/react';
 import { Navbar } from './Components/Navbar/Navbar'
 import { Home } from './Components/Home/Home'
 import { Line } from './Components/Line/Line';
@@ -9,9 +9,6 @@ import { Resume } from './Components/Resume/Resume';
 import { Clients } from './Components/Clients/Clients';
 import { Contact } from './Components/Contact/Contact';
 import { Footer } from './Components/Footer/Footer';
-
-
-
 
 function App() {
   const [currentLanguage, setCurrentLanguage] = useState('es');
@@ -28,6 +25,7 @@ function App() {
         <Navbar currentLanguage={currentLanguage} onChangeLanguage={changeLanguage}></Navbar>
         <Home currentLanguage={currentLanguage}></Home>
         <Line></Line>
+
         <Services currentLanguage={currentLanguage}></Services>
         <Line></Line>
         <Works currentLanguage={currentLanguage}></Works>

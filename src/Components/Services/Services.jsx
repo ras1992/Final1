@@ -5,7 +5,7 @@ import { Line } from '../Line/Line'; // Importa el componente personalizado Line
 
 import translations from '../Languages/Translations';
 
-const Services = ({currentLanguage}) => {
+const Services = ({ currentLanguage }) => {
 
     const [cardService, setCardService] = useState([]); // Define un estado para almacenar la información de las tarjetas de servicio
 
@@ -35,30 +35,19 @@ const Services = ({currentLanguage}) => {
                                 width={{ base: '100%', md: '45em' }}
                                 alignItems="center">
                                 <Text color='red' fontSize="md">{translations[currentLanguage]['MY SERVICES']}</Text> {/* Texto "MY SERVICES" en rojo */}
-                                <Text as="h1" fontWeight="bold" color='white' fontSize="60">{translations[currentLanguage]['What I Do']}</Text> {/* Título en blanco */}
+                                <Text as="h1" fontWeight="bold" color='white' fontSize={{ base: '40', md: '60' }}>{translations[currentLanguage]['What I Do']}</Text> {/* Título en blanco */}
                             </Text>
                         </Box>
 
                         <Flex flexDirection="column" alignItems="left" pb='5em'>
-                            <Flex flexWrap="wrap" justifyContent="left">
+                            <Flex flexWrap="wrap" justifyContent="center">
                                 {cardService.map((card, index) => (
                                     <Box
-                                        key={index} // Clave única para cada tarjeta
-                                        p="10" // Relleno interno
-                                        flex={{ base: "0 0 calc(100% - 16px)", md: "0 0 calc(30% - 16px)" }} // Calcula el ancho de cada tarjeta para 3 por fila con margen
-                                        mr="2vw" // Margen derecho
-                                        mt="2vh" // Margen superior
-                                        bg="red" // Fondo rojo
-                                        minWidth="50px" // Ancho mínimo
-                                        borderColor="#21282b" // Color del borde
-                                        borderRadius="10px" // Borde redondeado
-                                        overflow="hidden" // Controla el desbordamiento del contenido
-                                        filter="blur(0.5px)" // Aplica un filtro de desenfoque
-                                        boxShadow="4px 4px 8px rgba(0, 0, 0, 0.2)" // Sombra de la tarjeta
-                                        mb="16px" // Margen inferior
-                                        style={{
-                                            background: 'linear-gradient(140deg, #21282b, #1b1b1c)', // Cambia los colores según tus preferencias con gradiente
-                                        }}
+                                        key={index}
+
+                                        flex={{ base: "0 0 calc(100% - 16px)", md: "0 0 calc(30% - 16px)" }}
+
+                                        sx={style.cardData}
                                     >
                                         <Image src={card.icon} w='50px' h='40px'></Image> {/* Muestra la imagen del icono */}
                                         <Text fontSize="4xl" color="white" mt='1vh' >

@@ -30,37 +30,7 @@ const style={
         justifyContent: 'center',
     },
 
-    flexContainerStyle: {
-        pt: { base: '3vw', md: '5vw' },
-        pl: { base: '3vw', md: '5vw' },
-        flexDirection: 'column',
-        justifyContent: 'center',
-    },
-
-    titleContainerStyle: {
-        align: 'center',
-        flexDirection: 'column',
-        textAlign: 'center',
-        mb: '4vh',
-    },
-
-    titleTextStyle: {
-        color: 'red',
-        fontSize: 'md',
-    },
-
-    mainTitleStyle: {
-        as: 'h1',
-        fontWeight: 'bold',
-        color: 'white',
-        fontSize: '60',
-    },
-
-    cardContainerStyle: {
-        flexDirection: 'column',
-        alignItems: 'left',
-        pb: '5em',
-    },
+    
 
 }
 

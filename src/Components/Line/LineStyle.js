@@ -7,6 +7,7 @@ const style = {
         margin: '0 auto',
         position: 'relative',
         zIndex: '2',
+        
     },
 };
 

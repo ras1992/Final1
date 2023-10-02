@@ -74,6 +74,42 @@
         "icon": "/Images/IconServ/monitorBussinesDibujado.png",
         "link": "",
         "id": 6
+      },
+      {
+        "name": "ras",
+        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
+        "link": "",
+        "id": 7
+      },
+      {
+        "name": "ras1",
+        "icon": "/Images/IconServ/caja-50.png",
+        "link": "",
+        "id": 8
+      },
+      {
+        "name": "ras2",
+        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
+        "link": "",
+        "id": 9
+      },
+      {
+        "name": "ras4",
+        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
+        "link": "",
+        "id": 10
+      },
+      {
+        "name": "ras5",
+        "icon": "/Images/IconServ/caja-50.png",
+        "link": "",
+        "id": 11
+      },
+      {
+        "name": "ras6",
+        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
+        "link": "",
+        "id": 12
       }
     ],
     "resumeExperience": [
@@ -102,7 +138,7 @@
         "id": 2
       },
       {
-        "name": "Administratico diagnóstico por imagen",
+        "name": "Administrativo diagnóstico por imagen",
         "company": "Instituto Cardiólogico de Corrientes",
         "details": "administración de inventario, uso de sistema administrativo complejo, registro de transacción, atención al público, facturación, etc. / 1 persona a cargo / Capacitación / Organización / Manejo de Caja",
         "date": " 08/2017 - 12/2021 ",
@@ -228,17 +264,17 @@
     ],
     "contact": [
       {
-        "name": "Dirección",
+        "name": "Oberá - Misiones - Arg",
         "icon": "/Images/IconContact/mapa-32.png",
         "id": 1
       },
       {
-        "name": "Teléfono",
+        "name": "+54 3755 501946",
         "icon": "/Images/IconContact/telefono-32.png",
         "id": 2
       },
       {
-        "name": "Correo Electrónico",
+        "name": "kuspita20@gmail.com",
         "icon": "/Images/IconContact/mensaje-48.png",
         "id": 3
       },
@@ -329,6 +365,42 @@
         "icon": "/Images/IconServ/caja-50.png",
         "link": "",
         "id": 6
+      },
+      {
+        "name": "ras",
+        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
+        "link": "",
+        "id": 7
+      },
+      {
+        "name": "ras1",
+        "icon": "/Images/IconServ/caja-50.png",
+        "link": "",
+        "id": 8
+      },
+      {
+        "name": "ras2",
+        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
+        "link": "",
+        "id": 9
+      },
+      {
+        "name": "ras4",
+        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
+        "link": "",
+        "id": 10
+      },
+      {
+        "name": "ras5",
+        "icon": "/Images/IconServ/caja-50.png",
+        "link": "",
+        "id": 11
+      },
+      {
+        "name": "ras6",
+        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
+        "link": "",
+        "id": 12
       }
     ],
     "resumeExperience": [
@@ -491,23 +563,23 @@
     ],
     "contact": [
       {
-        "name": "Address",
-        "icon": "/Images/IconContact/map-32.png",
+        "name": "Oberá - Misiones - Arg",
+        "icon": "/Images/IconContact/mapa-32.png",
         "id": 1
       },
       {
-        "name": "Phone",
-        "icon": "/Images/IconContact/phone-32.png",
+        "name": "+54 3755 501946",
+        "icon": "/Images/IconContact/telefono-32.png",
         "id": 2
       },
       {
-        "name": "Email",
-        "icon": "/Images/IconContact/email-48.png",
+        "name": "kuspita20@gmail.com",
+        "icon": "/Images/IconContact/mensaje-48.png",
         "id": 3
       },
       {
-        "name": "Freelance Work",
-        "icon": "/Images/IconContact/check-48.png",
+        "name": "Work Freelance",
+        "icon": "/Images/IconContact/comprobado-48.png",
         "id": 4
       }
     ],

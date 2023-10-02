@@ -29,11 +29,11 @@ const Clients = ({currentLanguage}) => {
                 <Flex sx={style.body} pt={{ base: '3vw', md: '5vw' }} pl={{ base: '3vw', md: '5vw' }} flexDirection='column' justifyContent="center">
                     <Flex align="center" flexDirection="column" textAlign="center" mb="4vh">
                         <Text color='red' fontSize="md">{translations[currentLanguage]['BEST CUSTOMERS']}</Text>
-                        <Text as="h1" fontWeight="bold" color='white' fontSize="60">{translations[currentLanguage]['Selected Clients']}</Text>
+                        <Text as="h1" fontWeight="bold" color='white' fontSize={{ base: '40', md: '60' }}>{translations[currentLanguage]['Selected Clients']}</Text>
                     </Flex>
 
                     <Flex flexDirection="column" alignItems="left" pb='5em'>
-                        <Flex flexWrap="wrap" justifyContent="left">
+                        <Flex flexWrap="wrap" justifyContent="center">
                             {cardService.map((card, index) => (
                                 <Box
                                     key={index}

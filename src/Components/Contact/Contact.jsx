@@ -9,47 +9,76 @@ const Contact = ({ currentLanguage }) => {
 
     const [cardService, setCardService] = useState([]);
     const [toastMsg, setToastMsg] = useState([]);
+    const [formSubmitted, setFormSubmitted] = useState(false);
+
+    const [formData, setFormData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        subject: "",
+        message: "",
+    });
+
+
 
     useEffect(() => {
         try {
             // Realiza una solicitud fetch para obtener datos desde 'Json/Data.json'
             fetch('Json/Data.json')
-                .then(response => response.json()) // Convierte la respuesta a formato JSON
+                .then(response => response.json())
                 .then(data => {
                     setCardService(data[currentLanguage]['contact']);
                     setToastMsg(data[currentLanguage]['toast']);
-                }) // Almacena los datos de trabajo en el estado
+                });
 
         } catch (error) {
-            console.error('Error fetching data:', error) // Manejo de errores en caso de falla en la solicitud
+            console.error('Error fetching data:', error);
         }
+    }, [currentLanguage]);
 
-    }, []);
 
-    console.log(cardService) // Muestra en la consola la información de las tarjetas de trabajo
+    console.log(cardService) 
 
     const [state, handleSubmit] = useForm("maygpkql");
-    if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
-    }
-
     const toast = useToast()
 
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        const result = await handleSubmit(e);
+          setFormData({
+            name: '',
+            phone: '',
+            email: '',
+            subject: '',
+            message: '',
+          });
+          setFormSubmitted(true);
+    
+          // Llamar a la función toast aquí después de que se envíe el formulario con éxito.
+          toast({
+            title: toastMsg.title,
+            description: toastMsg.description,
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+          });
+        
+      };
 
     return (
         <>
             <ChakraProvider>
                 <section id="Contact">
-                    <form onSubmit={handleSubmit}>
-                        <Flex sx={style.body} pt={{ base: '5em', md: '5em' }} pl={{ base: '3vw', md: '5vw' }} pr={{ base: '3vw', md: '5vw' }} flexDirection='column' >
+                    <form onSubmit={handleFormSubmit}>
+                        <Flex sx={style.body}>
 
-                            <Flex sx={{ align: "center", flexDirection: "column", textAlign: "center", mb: "4vh" }}>
+                            <Flex sx={style.titleSub}>
                                 <Text color='red' fontSize="md">{translations[currentLanguage]['CONTACT']}</Text>
-                                <Text sx={{ as: "h1", fontWeight: "bold", color: 'white', fontSize: "60" }}>{translations[currentLanguage]['Contact With Me']}</Text>
+                                <Text sx={style.titleWhite}>{translations[currentLanguage]['Contact With Me']}</Text>
                             </Flex>
 
                             <Flex justifyContent="space-between" flexDirection={{ base: 'column', md: 'row' }}>
-                                {/* Columna Roja */}
+
 
                                 <Flex flexDirection="column" flex="0.5" >
 
@@ -57,25 +86,7 @@ const Contact = ({ currentLanguage }) => {
                                         <Box
                                             key={index}
                                             mb={index === cardService.length - 1 ? '0' : '1.5em'}
-                                            sx={{
-                                                p: "1em",
-
-                                                minW: '20em',
-                                                bg: "red",
-                                                borderColor: "#21282b",
-                                                borderRadius: "10px",
-                                                overflow: "hidden",
-                                                filter: "blur(0.5px)",
-                                                boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
-
-                                                background: "linear-gradient(140deg, #21282b, #1b1b1c)",
-                                                textAlign: 'center',
-                                                display: 'flex',
-                                                flexDirection: 'column',
-                                                justifyContent: 'center',
-                                                height: '8em',
-
-                                            }}
+                                            sx={style.cardStyle}
                                         >
                                             <Image src={card.icon} w='2em' h='2em' mx="auto" my="auto"></Image>
                                             <Text x="auto" my="auto" color='white'>{card.name}</Text>
@@ -85,56 +96,22 @@ const Contact = ({ currentLanguage }) => {
 
 
                                 {/* Columna Verde */}
-                                <Flex
-
-                                    sx={{
-                                        flexDirection: 'column',
-                                        bg: 'green',
-                                        borderRadius: "10px",
-                                        p: 9,
-                                        pt: 12,
-                                        mt: { base: '1.5em', md: '0' },
-                                        mb: { base: '1.5em', md: '0' },
-                                        ml: { base: '0', md: '1.5em' },
-                                        w: '100%',
-                                        overflow: "hidden",
-                                        background: "linear-gradient(140deg, #21282b, #1b1b1c)",
-                                        boxShadow: "4px 4px 20px rgba(0, 0, 0, 0.5)",
-                                        display: 'flex',
-                                        justifyContent: 'center',
-
-                                    }}
-
-                                >
+                                <Flex sx={style.cardStyle2}>
                                     <Box
 
-                                        flexDirection={{ base: 'column', md: 'row' }}
-                                        style={{
-                                            display: 'flex',
-                                            justifyContent: 'center', // Centra horizontalmente
-                                        }}
+                                        
+                                        sx={style.cardBox}
                                     >
-                                        <FormControl mb={{ base: '1em', md: '0em' }} >
+                                        <FormControl mb={{ base: '0.5em', md: '0em' }} >
                                             <Input
                                                 id="name"
                                                 type="text"
                                                 name="name"
+                                                value={formData.name}
                                                 placeholder={translations[currentLanguage]['Name']}
-                                                sx={{
-                                                    ...style.textPlaceholder,
-                                                    color: 'white',
-                                                    bg: '#171818',
-                                                    alignContent: 'center',
-                                                    borderColor: '#171818',
-
-                                                    '&:hover': {
-                                                        borderColor: '#303134', // Cambia el color de borde en hover
-                                                    },
-                                                    '&:focus': {
-                                                        outline: 'none !important', // Elimina el resaltado al hacer clic
-                                                        borderColor: '#303134', // Puedes ajustar el color del borde en foco
-                                                        boxShadow: 'none', // Elimina la sombra en foco
-                                                    },
+                                                sx={style.inputFormat}
+                                                onChange={(e) => {
+                                                    setFormData({ ...formData, name: e.target.value });
                                                 }}
                                             />
                                             <ValidationError
@@ -148,22 +125,11 @@ const Contact = ({ currentLanguage }) => {
                                                 id="phone"
                                                 type="phone"
                                                 name="phone"
+                                                value={formData.phone}
                                                 placeholder={translations[currentLanguage]['Phone']}
-                                                sx={{
-                                                    color: 'white',
-                                                    bg: '#171818',
-                                                    alignContent: 'center',
-                                                    borderColor: '#171818',
-                                                    ...style.textPlaceholder,
-
-                                                    '&:hover': {
-                                                        borderColor: '#303134', // Cambia el color de borde en hover
-                                                    },
-                                                    '&:focus': {
-                                                        outline: 'none !important', // Elimina el resaltado al hacer clic
-                                                        borderColor: '#303134', // Puedes ajustar el color del borde en foco
-                                                        boxShadow: 'none', // Elimina la sombra en foco
-                                                    },
+                                                sx={style.inputFormat}
+                                                onChange={(e) => {
+                                                    setFormData({ ...formData, phone: e.target.value });
                                                 }}
                                             />
                                             <ValidationError
@@ -182,27 +148,16 @@ const Contact = ({ currentLanguage }) => {
                                             justifyContent: 'center', // Centra horizontalmente
                                         }}
                                     >
-                                        <FormControl mb={{ base: '1em', md: '0em' }}>
+                                        <FormControl mb={{ base: '0.5em', md: '0em' }}>
                                             <Input
                                                 id="email"
                                                 type="email"
                                                 name="email"
+                                                value={formData.email}
                                                 placeholder={translations[currentLanguage]['Email']}
-                                                sx={{
-                                                    color: 'white',
-                                                    bg: '#171818',
-                                                    alignContent: 'center',
-                                                    borderColor: '#171818',
-                                                    ...style.textPlaceholder,
-
-                                                    '&:hover': {
-                                                        borderColor: '#303134', // Cambia el color de borde en hover
-                                                    },
-                                                    '&:focus': {
-                                                        outline: 'none !important', // Elimina el resaltado al hacer clic
-                                                        borderColor: '#303134', // Puedes ajustar el color del borde en foco
-                                                        boxShadow: 'none', // Elimina la sombra en foco
-                                                    },
+                                                sx={style.inputFormat}
+                                                onChange={(e) => {
+                                                    setFormData({ ...formData, email: e.target.value });
                                                 }}
                                             />
                                             <ValidationError
@@ -217,27 +172,15 @@ const Contact = ({ currentLanguage }) => {
                                                 id="subject"
                                                 type="text"
                                                 name="subject"
-
+                                                value={formData.subject}
                                                 placeholder={translations[currentLanguage]['Subject']}
-                                                sx={{
-                                                    color: 'white',
-                                                    bg: '#171818',
-                                                    alignContent: 'center',
-                                                    borderColor: '#171818',
-                                                    ...style.textPlaceholder,
-
-                                                    '&:hover': {
-                                                        borderColor: '#303134', // Cambia el color de borde en hover
-                                                    },
-                                                    '&:focus': {
-                                                        outline: 'none !important', // Elimina el resaltado al hacer clic
-                                                        borderColor: '#303134', // Puedes ajustar el color del borde en foco
-                                                        boxShadow: 'none', // Elimina la sombra en foco
-                                                    },
+                                                sx={style.inputFormat}
+                                                onChange={(e) => {
+                                                    setFormData({ ...formData, subject: e.target.value });
                                                 }}
                                             />
                                             <ValidationError
-                                                prefix="subject"
+                                                prefix="Subject"
                                                 field="subject"
                                                 errors={state.errors}
                                             />
@@ -256,25 +199,16 @@ const Contact = ({ currentLanguage }) => {
                                                 id="message"
                                                 name="message"
                                                 type="message"
+                                                value={formData.message}
                                                 placeholder={translations[currentLanguage]['Message']}
-
                                                 sx={{
-                                                    textAlign: 'left',
-                                                    bg: '#171818',
-                                                    borderColor: '#171818',
-                                                    color: 'white',
-                                                    ...style.textPlaceholder,
-                                                    width: '100%', // Ancho al 100%
-                                                    height: '100%', // Altura al 100%
-                                                    '&:hover': {
-                                                        borderColor: '#303134', // Cambia el color de fondo en hover
-                                                    },
-                                                    '&:focus': {
-                                                        outline: 'none !important', // Elimina el resaltado al hacer clic
-                                                        borderColor: '#303134', // Puedes ajustar el color del borde en foco
-                                                        boxShadow: 'none', // Elimina la sombra en foco
-                                                    },
+                                                    ...style.inputFormat,
+                                                    width: '100%',
+                                                    height: '100%',
                                                     resize: 'none',
+                                                }}
+                                                onChange={(e) => {
+                                                    setFormData({ ...formData, message: e.target.value });
                                                 }}
                                             />
                                             <ValidationError
@@ -286,37 +220,14 @@ const Contact = ({ currentLanguage }) => {
                                     </Box>
                                     <Box mt='4' textAlign='center' alignItems='center' >
                                         <Button
-                                            onClick={() =>
-                                                toast({
-                                                    title: toastMsg.title,
-                                                    description: toastMsg.description,
-                                                    status: 'success',
-                                                    duration: 9000,
-                                                    isClosable: true,
-                                                })
-                                            }
-
                                             type="submit"
 
-                                            sx={{
-                                                bg: '#171818',
-                                                color: '#567f95',
-                                                '&:hover': {
-                                                    borderColor: '#303134',
-                                                    bg: '#303134'
-                                                },
-                                            }}>
+                                            sx={style.button}>
 
                                             {translations[currentLanguage]['Send Message']}
 
-                                            <Image
-                                                sx={{
-                                                    ml: '1',
-                                                    textAlign: 'center',
-                                                    alignItems: 'center',
-                                                    src: '/Images/IconContact/enviado-32.png',
-                                                    h: '5',
-                                                }} /> </Button>
+                                            <Image src='/Images/IconContact/enviado-32.png'
+                                                sx={style.image} /> </Button>
                                     </Box>
                                 </Flex>
                             </Flex>

@@ -10,9 +10,9 @@ import translations from '../Languages/Translations';
 import { Redes } from '../Redes/Redes';
 
 const Home = ({ currentLanguage }) => {
-    const yearsExp = 20; // Define la variable yearsExp con un valor de 20 años de experiencia
-    const globalClient = 700; // Define la variable globalClient con un valor de 700 clientes globales
-    const awardsWins = 30; // Define la variable awardsWins con un valor de 30 premios
+    const yearsExp = 2; // Define la variable yearsExp con un valor de 20 años de experiencia
+    const globalClient = 2; // Define la variable globalClient con un valor de 700 clientes globales
+    const awardsWins = 3; // Define la variable awardsWins con un valor de 30 premios
 
     return (
         <>
@@ -32,91 +32,67 @@ const Home = ({ currentLanguage }) => {
                             alignItems="center" // Alinea elementos al centro verticalmente
                             pr={{ base: '1em', md: '2em' }} // Relleno derecho en dispositivos pequeños y medianos
                         >
-                            <Text color="white">
-
-                                <h4>
-                                    {translations[currentLanguage]['Hello']}, <Text color="#d03049" as="span"> {translations[currentLanguage]['I´m']} </Text> {/* Texto en rojo */}
-                                </h4>
-                                <Text as="h1" fontWeight="bold" fontSize="60"> {/* Título en negrita y tamaño de fuente grande */}
+                            <Box color="white">
+                                <Text as="h4">
+                                    {translations[currentLanguage]['Hello']}, <Text color="#d03049" as="span"> {translations[currentLanguage]['I´m']} </Text>
+                                </Text>
+                                <Text as="h1" fontWeight="bold" fontSize={{ base: '40', md: '60' }}>
                                     {translations[currentLanguage]['Kthan Foster']}
                                 </Text>
-                                <Text as="h3">{translations[currentLanguage]['Web Designer And Web Developer']}</Text> {/* Título de nivel 3 */}
-                                <Text mt="2vh" color="#bac5d5"> {/* Margen superior y color de texto */}
+                                <Text as="h3">{translations[currentLanguage]['Web Designer And Web Developer']}</Text>
+                                <Text mt="2vh" color="#bac5d5">
                                     {translations[currentLanguage]['text']}
                                 </Text>
-                                <Text mt="6vh">{translations[currentLanguage]['FIND ME ON']}</Text> {/* Texto "FIND ME ON" con margen superior */}
+                                <Text mt="6vh">{translations[currentLanguage]['FIND ME ON']}</Text>
 
                                 <Redes></Redes>
 
-                                <HStack spacing={{ base: "1em", md: "3em" }} pt={{ base: "1em", md: "3em" }}> {/* Espacio horizontal y margen superior */}
+                                <HStack spacing={{ base: "1em", md: "3em" }} pt={{ base: "1em", md: "3em" }}>
                                     <Box>
                                         <Text fontSize={{ base: "xl", md: "3xl" }}>
-                                            {yearsExp}+ {/* Muestra la variable yearsExp */}
+                                            {yearsExp}+
                                         </Text>
                                         <Text mt="1px" color="#bac5d5" fontSize="md">
-                                            {translations[currentLanguage]['YEARS OF EXPERIENCE']} {/* Texto de experiencia */}
+                                            {translations[currentLanguage]['YEARS OF EXPERIENCE']}
                                         </Text>
                                     </Box>
                                     <Box>
                                         <Text fontSize={{ base: "xl", md: "3xl" }}>
-                                            {globalClient}+ {/* Muestra la variable globalClient */}
+                                            {globalClient}+
                                         </Text>
                                         <Text mt="1px" color="#bac5d5" fontSize="md">
-                                            {translations[currentLanguage]['GLOBAL WORKING CLIENT']} {/* Texto de clientes globales */}
+                                            {translations[currentLanguage]['GLOBAL WORKING CLIENT']}
                                         </Text>
                                     </Box>
                                     <Box>
                                         <Text fontSize={{ base: "xl", md: "3xl" }}>
-                                            {awardsWins}+ {/* Muestra la variable awardsWins */}
+                                            {awardsWins}+
                                         </Text>
                                         <Text mt="1px" color="#bac5d5" fontSize="md">
-                                            {translations[currentLanguage]['AWARDS WIN']} {/* Texto de premios ganados */}
+                                            {translations[currentLanguage]['AWARDS WIN']}
                                         </Text>
                                     </Box>
                                 </HStack>
-                            </Text>
+                            </Box>
                         </Flex>
 
                         <Box
                             flexGrow={{ base: 1.5, md: 0 }} // Factor de crecimiento flexible en dispositivos pequeños y medianos
                             alignItems="center" // Alinea elementos al centro verticalmente
                             justifySelf="center" // Justificación propia al centro
-                            pt={{ base: '20vh', md: '20vh' }} // Relleno superior en dispositivos pequeños y medianos
+                            pt={{ base: '30vh', md: '10vh' }} // Relleno superior en dispositivos pequeños y medianos
                         >
-                            <Box>
-                                <Box
 
-                                    sx={{
-                                        bgColor: "#1b1b26",
-                                        borderRadius: "15px",
-                                        position: "relative",
-                                        w: "100%",
-                                    }}
-
-                                    maxW={{ base: '39em', md: '39em' }} // Ancho máximo en dispositivos pequeños y medianos
-                                    h={{ base: '34em', md: '34em' }} // Alto del elemento
-                                    maxHeight={{ base: '34em', md: 'none' }} // Altura máxima en dispositivos pequeños y sin límite en medianos
-                                >
-                                    <Image
-                                        src={perfil} // Muestra la imagen de perfil
-                                        alt="Perfil" // Texto alternativo para la imagen
-                                        pl={{ base: '1vh', md: '1vw' }} // Relleno izquierdo en dispositivos pequeños y medianos
-                                        pr={{ base: '1vh', md: '1vw' }}
-                                        top={{ base: '-10em', md: '-10em' }}
-                                        
-                                        sx={{
-                                            position: "relative",
-                                            w: "100%",
-                                            h: "700",
-                                            left: "0",
-                                            zIndex: 1,
-                                            filter: "auto",
-                                            brightness: "90%",
-                                            contrast: "120%",
-                                        }}
-                                    />
-                                </Box>
+                            <Box
+                                sx={style.box}
+                            >
+                                <Image
+                                    src={perfil}
+                                    alt="Perfil"
+                                    sx={style.image}
+                                />
                             </Box>
+
                         </Box>
                     </Flex>
 

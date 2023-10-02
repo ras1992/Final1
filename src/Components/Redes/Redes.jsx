@@ -6,6 +6,10 @@ import gmail from '/Images/Social/icons8-gmail.svg';
 import github from '/Images/Social/icons8-github.svg';
 
 const Redes = () => {
+    const emailLink = `https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZdjtdrPjjfMlrrQXlflXwSqKpTrNBGGMVdHTNvkDhgLWQsPpvVPCbHZDsKmHnwccxJRzL`;
+    const linkedinURL='https://www.linkedin.com/in/ramiro-kuspita-969014151'
+    const githubURL='https://github.com/ras1992'
+
     const Icono = ({ src }) => {
         return (
             <Box
@@ -20,7 +24,7 @@ const Redes = () => {
         );
     }
     // Crea la URL para abrir una nueva ventana de redacción de correo en Gmail
-    const emailLink = `https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZdjtdrPjjfMlrrQXlflXwSqKpTrNBGGMVdHTNvkDhgLWQsPpvVPCbHZDsKmHnwccxJRzL`;
+    
 
     const handleClick = () => {
         // Abre la URL en una nueva ventana o pestaña del navegador
@@ -31,10 +35,10 @@ const Redes = () => {
             <Link onClick={handleClick}>
                 <Icono src={gmail} />
             </Link>
-            <Link href="https://www.linkedin.com/in/ramiro-kuspita-969014151" target="_blank">
+            <Link href={linkedinURL} target="_blank">
                 <Icono src={linkedin} />
             </Link>
-            <Link href="https://github.com/ras1992" target="_blank">
+            <Link href={githubURL} target="_blank">
                 <Icono src={github} />
             </Link>
         </HStack>
