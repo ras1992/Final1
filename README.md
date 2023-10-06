@@ -17,7 +17,7 @@ https://www.behance.net/gallery/141518055/Portfolio-Website-Design/modules/79954
 
 
 # PORTFOLIO CONFIGURABLE BILINGÜE
->[Ver Pagina](https://porfolio-react-chakra.netlify.app/)
+>[Ver Pagina Deployada](https://porfolio-react-chakra.netlify.app/)
 
 
 #**CONFIGURACIÓN DEL PORFOLIO**
