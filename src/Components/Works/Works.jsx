@@ -1,23 +1,43 @@
 import { React, useState, useEffect } from 'react';
 import style from './WorksStyle';
-import { ChakraProvider, Box, Text, Flex, Center, Button, Image, Divider } from '@chakra-ui/react';
+import { ChakraProvider, Box, Text, Flex, useToast, Button, Image, Divider } from '@chakra-ui/react';
 import translations from '../Languages/Translations';
 
 const Works = ({ currentLanguage }) => {
     const [cardService, setCardService] = useState([]);
     const [showAllCards, setShowAllCards] = useState(false);
+    const [toastMsgCard, setToastMsgCard] = useState([]);
+    const toast = useToast()
 
     useEffect(() => {
         try {
             fetch('Json/Data.json')
                 .then(response => response.json())
-                .then(data => setCardService(data[currentLanguage]['works']))
+                .then(data => {
+                    setCardService(data[currentLanguage]['works'])
+                    setToastMsgCard(data[currentLanguage]['toastCards'])
+                })
+                
         } catch (error) {
             console.error('Error fetching data:', error);
         }
     }, [currentLanguage]);
 
     const displayedCards = showAllCards ? cardService : cardService.slice(0, 6);
+
+    const handleClick = (card) => {
+        if (card.link === "") {
+            toast({
+                title: toastMsgCard.title,
+                description: toastMsgCard.description,
+                status: 'error',
+                duration: 5000,
+                isClosable: true,
+              });
+        } else {
+            window.open(card.link, '_blank');
+        }
+    };
 
     return (
         <ChakraProvider>
@@ -30,21 +50,50 @@ const Works = ({ currentLanguage }) => {
 
                     <Flex flexDirection="column" alignItems="left" pb='5em'>
                         <Flex flexWrap="wrap" justifyContent="center">
+
                             {displayedCards.map((card, index) => (
                                 <Box
                                     key={index}
-                                    flex={{ base: "0 0 calc(100% - 4em)", md: "0 0 calc(31% - 16px)" }}
-                                    sx={style.cardData}
+                                    flex={{ base: "0 0 calc(100% - 4em)", md: "0 0 calc(30% - 16px)" }}
+                                    sx={{
+                                        ...style.cardData,
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                    }}
                                 >
-                                    <Image src={card.icon} w='100%' h='100%'></Image>
+                                    <button onClick={() => handleClick(card)}>
+                                        {card.icon === "" ? (
+                                            <Box textAlign="center">
+                                                <Text color="white" textAlign="center">
+                                                    {card.name}
+                                                </Text>
+                                                <Image src="/Images/IconServ/caja-50.png" style={{ display: 'block', margin: '0 auto' }} />
+                                            </Box>
+                                        ) : (
+                                            <Box>
+                                                <Text color="white" textAlign="center">{card.name}</Text>
+                                                <Image src={card.icon} />
+                                            </Box>
+                                        )}
+                                    </button>
                                 </Box>
+
                             ))}
+
+
                         </Flex>
 
                         {/* Contenedor del botón */}
                         <Flex justifyContent="center" mt="2em">
                             <Button
-                                onClick={() => setShowAllCards(!showAllCards)}
+                                onClick={() => {
+                                    setShowAllCards(!showAllCards)
+                                    if (showAllCards) {
+                                        window.location.href = "#Porfolio";
+                                    }
+                                }}
                                 sx={style.button}
                             >
                                 {showAllCards ? `${translations[currentLanguage]['moreNo']}` : `${translations[currentLanguage]['moreYes']}`}

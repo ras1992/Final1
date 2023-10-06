@@ -14,7 +14,7 @@ const translations = {
     'I´m': 'SOY',
     'Kthan Foster': 'RAMIRO KUSPITA',
     'Web Designer And Web Developer': 'Diseñador Web y Desarrollador Web',
-    'text': 'LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. AB EXERCITATIONEM DOLORUM MINIMA QUAS QUIDEM QUIBUS DAM ISTE QUAERAT MOLESTIAS TEMPORIBUS, EST ITAQUE NOSTRUM QUOD ASPERIORES ULLAM MAGNI POSSIMUS. NOBIS, ESSE ANIMI?',
+    'text': 'Tener la posibilidad de automatizar todo lo que tenga a mano utilizando programación y dispositivos electrónicos / eléctricos, al punto de estar sentado solo controlando el procesó. EJ. Producción controlada por un solo operario de mantenimiento.',
     'FIND ME ON': 'ENCUÉNTRAME EN',
     'YEARS OF EXPERIENCE': 'AÑOS DE EXPERIENCIA',
     'GLOBAL WORKING CLIENT': 'CLIENTES DE TRABAJO GLOBAL',
@@ -62,14 +62,14 @@ const translations = {
     'DOWNLOAD CV': 'DOWNLOAD CV',
     Home: 'Home',
     Hello: 'HELLO',
-    'I´m': 'I´M',
+    'I´m': "I'M",
     'Kthan Foster': 'RAMIRO KUSPITA',
-    'Web Designer And Web Developer': 'Web Designer And Web Developer',
-    'text': 'THIS IS THE CONTENT IN ENGLISH.',
+    'Web Designer And Web Developer': 'Web Designer and Web Developer',
+    'text': 'Having the ability to automate everything at hand using programming and electronic/electrical devices, to the point of sitting alone controlling the process. E.g., Production controlled by a single maintenance operator.',
     'FIND ME ON': 'FIND ME ON',
     'YEARS OF EXPERIENCE': 'YEARS OF EXPERIENCE',
-    'GLOBAL WORKING CLIENT': 'GLOBAL WORKING CLIENT',
-    'AWARDS WIN': 'AWARDS WIN',
+    'GLOBAL WORKING CLIENT': 'GLOBAL WORKING CLIENTS',
+    'AWARDS WIN': 'AWARDS WON',
     Services: 'Services',
     'MY SERVICES': 'MY SERVICES',
     'What I Do': 'What I Do',
@@ -99,8 +99,7 @@ const translations = {
     'Send Message': 'Send Message',
     Footer: 'Footer',
     'All Rights Reserved By PixelMove': 'All Rights Reserved By PixelMove',
-
-  },
+},
 };
 
 

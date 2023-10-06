@@ -40,76 +40,74 @@
     ],
     "works": [
       {
-        "name": "ras",
-        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
+        "name": "app videos protegidos",
+        "detail": "",
+        "icon": "/Images/Works/Screenshot_20230922_175433.png",
         "link": "",
         "id": 1
       },
       {
-        "name": "ras1",
-        "icon": "/Images/IconServ/caja-50.png",
+        "name": "app chat",
+        "detail": "",
+        "icon": "/Images/Works/Screenshot_20231003_142001.png",
         "link": "",
         "id": 2
       },
       {
-        "name": "ras2",
-        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
+        "name": "app pime control personal",
+        "detail": "",
+        "icon": "/Images/Works/Screenshot_20231003_145100.png",
         "link": "",
         "id": 3
       },
       {
-        "name": "ras4",
-        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
+        "name": "porfolio en js",
+        "detail": "",
+        "icon": "Images/Works/WhatsApp Image 2023-10-03 at 18.35.20.jpeg",
+        "link": "https://kuspita-ramiro-porfolio.netlify.app/",
+        "id": 5
+      },
+      {
+        "name": "Login responsive",
+        "detail": "",
+        "icon": "Images/Works/WhatsApp Image 2023-10-04 at 13.29.07.jpeg",
+        "link": "https://tarea1-kuspita.netlify.app/",
+        "id": 4
+      },
+      {
+        "name": "Videos online",
+        "detail": "",
+        "icon": "Images/Works/WhatsApp Image 2023-10-04 at 13.29.08.jpeg",
+        "link": "https://clase-virtual.netlify.app",
+        "id": 4
+      },
+      {
+        "name": "lectura datos plc tiempo real",
+        "detail": "",
+        "icon": "/Images/Works/lecturaplc.jpeg",
         "link": "",
         "id": 4
       },
       {
-        "name": "ras5",
-        "icon": "/Images/IconServ/caja-50.png",
+        "name": "Alertas de plc a Whatsapp - python / sql",
+        "detail": "",
+        "icon": "",
         "link": "",
         "id": 5
       },
       {
-        "name": "ras6",
-        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
+        "name": "Edition de db y pagina web (Nueva Categoría en sistema Stock) - php / sql",
+        "detail": "",
+        "icon": "",
         "link": "",
         "id": 6
       },
       {
-        "name": "ras",
-        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
+        "name": "Desarrollo sistema administrativo empresarial, Personal y Facturación - python / sql",
+        "detail": "",
+        "icon": "",
         "link": "",
         "id": 7
-      },
-      {
-        "name": "ras1",
-        "icon": "/Images/IconServ/caja-50.png",
-        "link": "",
-        "id": 8
-      },
-      {
-        "name": "ras2",
-        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
-        "link": "",
-        "id": 9
-      },
-      {
-        "name": "ras4",
-        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
-        "link": "",
-        "id": 10
-      },
-      {
-        "name": "ras5",
-        "icon": "/Images/IconServ/caja-50.png",
-        "link": "",
-        "id": 11
-      },
-      {
-        "name": "ras6",
-        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
-        "link": "",
-        "id": 12
       }
     ],
     "resumeExperience": [
@@ -139,8 +137,8 @@
       },
       {
         "name": "Administrativo diagnóstico por imagen",
-        "company": "Instituto Cardiólogico de Corrientes",
-        "details": "administración de inventario, uso de sistema administrativo complejo, registro de transacción, atención al público, facturación, etc. / 1 persona a cargo / Capacitación / Organización / Manejo de Caja",
+        "company": "Instituto Cardiológico de Corrientes",
+        "details": "administración de inventario, uso de sistema administrativo complejo, registro de transacciones, atención al público, facturación, etc. / 1 persona a cargo / Capacitación / Organización / Manejo de Caja",
         "date": " 08/2017 - 12/2021 ",
         "status": "",
         "id": 3
@@ -212,9 +210,9 @@
         "id": 7
       },
       {
-        "name": "Técnico Electromecanico",
+        "name": "Técnico Electromecánico",
         "modality": "Online",
-        "study": "Escuela Tecnica Nº 7",
+        "study": "Escuela Técnica Nº 7",
         "date": "02/2004 - 12/2009",
         "status": "Graduado",
         "id": 8
@@ -288,119 +286,123 @@
       "title": "Formulario Enviado.",
       "description": "Responderemos a la brevedad. Saludos.",
       "id": 1
+    },
+    "toastCards": {
+      "title": "Proyecto código Privado",
+      "description": "No está disponible el link.",
+      "id": 1
     }
   },
+
   "en": {
     "services": [
       {
         "name": "Website Development",
         "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
-        "detail": "With knowledge in HTML5, JavaScript, CSS3, Bootstrap, React, and Node.js, I offer web development services for interactive websites and web applications.",
+        "detail": "With knowledge in HTML5, JavaScript, CSS3, Bootstrap, React, and Node.js, web development service for websites and interactive web applications.",
         "id": 1
       },
       {
         "name": "Mobile App Development",
         "icon": "/Images/IconServ/caja-50.png",
-        "detail": "Create mobile applications for Android using Android Studio with Dart and Flutter.",
+        "detail": "Creating mobile apps for Android using Android Studio with Dart and Flutter.",
         "id": 2
       },
       {
         "name": "Python Programming",
         "icon": "/Images/IconServ/monitorBussinesDibujado.png",
-        "detail": "Software development services using Python for various applications, including automation, data analysis, and web development with frameworks like Django.",
+        "detail": "Software development services using Python for various applications such as automation, data analysis, and web development with frameworks like Django.",
         "id": 3
       },
       {
         "name": "Real-time Application Development",
         "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
-        "detail": "Build real-time applications, such as chat applications, online assistance with geolocation, real-time tracking systems, and more.",
+        "detail": "Building real-time applications such as chat apps, online assistance with geolocation, real-time tracking systems, and more.",
         "id": 4
       },
       {
         "name": "Database Management",
-        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
-        "detail": "With MySQL and Firebase, I offer database design, administration, and maintenance services.",
+        "icon": "/Images/IconServ/caja-50.png",
+        "detail": "With MySQL and Firebase, design, administration, and maintenance of databases services.",
         "id": 5
       },
       {
         "name": "Automation and Scripting",
-        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
-        "detail": "Automate tasks and processes on both Windows and Linux systems.",
+        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
+        "detail": "Automating tasks and processes on Windows and Linux systems.",
         "id": 6
       }
     ],
     "works": [
       {
-        "name": "ras",
-        "icon": "/Images/IconServ/caja-50.png",
+        "name": "Protected Videos App",
+        "detail": "",
+        "icon": "/Images/Works/Screenshot_20230922_175433.png",
         "link": "",
         "id": 1
       },
       {
-        "name": "ras1",
-        "icon": "/Images/IconServ/caja-50.png",
+        "name": "Chat App",
+        "detail": "",
+        "icon": "/Images/Works/Screenshot_20231003_142001.png",
         "link": "",
         "id": 2
       },
       {
-        "name": "ras2",
-        "icon": "/Images/IconServ/caja-50.png",
+        "name": "Personal Pime Control App",
+        "detail": "",
+        "icon": "/Images/Works/Screenshot_20231003_145100.png",
         "link": "",
         "id": 3
       },
       {
-        "name": "ras4",
-        "icon": "/Images/IconServ/caja-50.png",
+        "name": "JavaScript Portfolio",
+        "detail": "",
+        "icon": "Images/Works/WhatsApp Image 2023-10-03 at 18.35.20.jpeg",
+        "link": "https://kuspita-ramiro-porfolio.netlify.app/",
+        "id": 5
+      },
+      {
+        "name": "Responsive Login",
+        "detail": "",
+        "icon": "Images/Works/WhatsApp Image 2023-10-04 at 13.29.07.jpeg",
+        "link": "https://tarea1-kuspita.netlify.app/",
+        "id": 4
+      },
+      {
+        "name": "Online Videos",
+        "detail": "",
+        "icon": "Images/Works/WhatsApp Image 2023-10-04 at 13.29.08.jpeg",
+        "link": "https://clase-virtual.netlify.app",
+        "id": 4
+      },
+      {
+        "name": "Real-time PLC Data Reading",
+        "detail": "",
+        "icon": "/Images/Works/lecturaplc.jpeg",
         "link": "",
         "id": 4
       },
       {
-        "name": "ras5",
-        "icon": "/Images/IconServ/caja-50.png",
+        "name": "PLC Alerts to WhatsApp - Python/SQL",
+        "detail": "",
+        "icon": "",
         "link": "",
         "id": 5
       },
       {
-        "name": "ras6",
-        "icon": "/Images/IconServ/caja-50.png",
+        "name": "Database and Website Editing (New Category in Stock System) - PHP/SQL",
+        "detail": "",
+        "icon": "",
         "link": "",
         "id": 6
       },
       {
-        "name": "ras",
-        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
+        "name": "Enterprise Administrative System Development - Personal and Invoicing - Python/SQL",
+        "detail": "",
+        "icon": "",
         "link": "",
         "id": 7
-      },
-      {
-        "name": "ras1",
-        "icon": "/Images/IconServ/caja-50.png",
-        "link": "",
-        "id": 8
-      },
-      {
-        "name": "ras2",
-        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
-        "link": "",
-        "id": 9
-      },
-      {
-        "name": "ras4",
-        "icon": "/Images/IconServ/WebSiteDesingDibujado.png",
-        "link": "",
-        "id": 10
-      },
-      {
-        "name": "ras5",
-        "icon": "/Images/IconServ/caja-50.png",
-        "link": "",
-        "id": 11
-      },
-      {
-        "name": "ras6",
-        "icon": "/Images/IconServ/monitorBussinesDibujado.png",
-        "link": "",
-        "id": 12
       }
     ],
     "resumeExperience": [
@@ -415,14 +417,14 @@
       {
         "name": "Full Stack Developer",
         "company": "Red Maker",
-        "details": "Teaching Arduino programming",
+        "details": "Teaching programming on Arduino",
         "date": "04/2023 - 06/2023",
         "status": "",
         "id": 1
       },
       {
         "name": "Full Stack Developer",
-        "company": "SUKA Group",
+        "company": "SUKA Grupo",
         "details": "Python Developer - PyQt5 - MySQL",
         "date": "01/2022 - 06/2022",
         "status": "",
@@ -430,8 +432,8 @@
       },
       {
         "name": "Diagnostic Imaging Administrator",
-        "company": "Instituto Cardiólogico de Corrientes",
-        "details": "Inventory management, use of complex administrative system, transaction recording, customer service, billing, etc. / 1 subordinate / Training / Organization / Cash handling",
+        "company": "Instituto Cardiológico de Corrientes",
+        "details": "Inventory management, use of complex administrative system, transaction recording, customer service, billing, etc. / 1 person in charge / Training / Organization / Cash Handling",
         "date": "08/2017 - 12/2021",
         "status": "",
         "id": 3
@@ -449,7 +451,7 @@
       {
         "name": "QA Testing - Arg. Prog.",
         "modality": "Online",
-        "study": "Argentina Program - UTN",
+        "study": "Argentina Programa - UTN",
         "date": "02/2023 - 04/2023",
         "status": "Graduated",
         "id": 1
@@ -457,7 +459,7 @@
       {
         "name": "Java Full Stack - Arg. Prog.",
         "modality": "Online",
-        "study": "Argentina Program - UTN",
+        "study": "Argentina Programa - UTN",
         "date": "02/2023 - 04/2023",
         "status": "Graduated",
         "id": 2
@@ -489,17 +491,17 @@
       {
         "name": "Computer Technician",
         "modality": "Online",
-        "study": "Escuela Superior Tecnica",
+        "study": "Escuela Superior Técnica",
         "date": "02/2015 - 12/2017",
         "status": "Graduated",
         "id": 6
       },
       {
-        "name": "Electronic Engineering",
+        "name": "Electronics Engineering",
         "modality": "Online",
-        "study": "UNAM - National University of Misiones",
+        "study": "UNAM National University of Misiones",
         "date": "03/2010 - 09/2014",
-        "status": "Dropped Out",
+        "status": "Abandoned",
         "id": 7
       },
       {
@@ -511,9 +513,9 @@
         "id": 8
       },
       {
-        "name": "Various Skills",
+        "name": "Various Knowledge",
         "modality": "Self-taught",
-        "study": "Increasing knowledge for personal interest in automation / Introduction to Cybersecurity - Red Team / Python - Full Stack - Php - Full Stack - Web Editing / Bash - Scripting - Full Stack / Office - Intermediate - Advanced",
+        "study": "Increasing knowledge for enjoyment in automation / Introduction to Cybersecurity - Red Team / Python - Full Stack - PHP - Full Stack - Web Editing / Bash - Scripting - Full Stack / Office - Intermediate - Advanced",
         "date": "2010 - Present",
         "status": "Learning",
         "id": 9
@@ -522,48 +524,40 @@
     "clients": [
       {
         "name": "Goldline",
-        "icon": "/Images/IconServ/WebSiteDesignDrawn.png",
         "id": 1
       },
       {
         "name": "Venture",
-        "icon": "/Images/IconServ/box-50.png",
         "id": 2
       },
       {
         "name": "Circle",
-        "icon": "/Images/IconServ/monitorBusinessDrawn.png",
         "id": 3
       },
       {
         "name": "Velocity",
-        "icon": "/Images/IconServ/WebSiteDesignDrawn.png",
         "id": 4
       },
       {
         "name": "UTOSIA",
-        "icon": "/Images/IconServ/box-50.png",
         "id": 5
       },
       {
         "name": "ZTOS",
-        "icon": "/Images/IconServ/monitorBusinessDrawn.png",
         "id": 6
       },
       {
         "name": "ASGARDIA",
-        "icon": "/Images/IconServ/box-50.png",
         "id": 7
       },
       {
         "name": "Treva",
-        "icon": "/Images/IconServ/monitorBusinessDrawn.png",
         "id": 8
       }
     ],
     "contact": [
       {
-        "name": "Oberá - Misiones - Arg",
+        "name": "Oberá - Misiones - Argentina",
         "icon": "/Images/IconContact/mapa-32.png",
         "id": 1
       },
@@ -578,7 +572,7 @@
         "id": 3
       },
       {
-        "name": "Work Freelance",
+        "name": "Freelance Work",
         "icon": "/Images/IconContact/comprobado-48.png",
         "id": 4
       }
@@ -586,6 +580,11 @@
     "toast": {
       "title": "Form Submitted.",
       "description": "We will respond shortly. Regards.",
+      "id": 1
+    },
+    "toastCards": {
+      "title": "Private Code Project",
+      "description": "Link not available.",
       "id": 1
     }
   }
