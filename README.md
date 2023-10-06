@@ -1,25 +1,39 @@
-# Copiar un Porfolio igual al original / luego editar con datos propios
+# CONSIGNA
+**Copiar un Porfolio igual al original / luego editar con datos propios**
+
 
 https://www.behance.net/gallery/141518055/Portfolio-Website-Design/modules/799542739
 
+
 # Final1
 
-#CONFIGURACION DEL PORFOLIO
 
-Se configura el logo
-Tarea-2\public\vite.png
+# PORTFOLIO CONFIGURABLE BILINGÜE
+>[Ver Pagina](https://porfolio-react-chakra.netlify.app/)
 
-Se configura los datos que se mostraran
-Tarea-2\public\Json\Data.json
 
-Configura los titulos / subtitulos y otros
-Tarea-2\src\Components\Languages\Translations.js
+#**CONFIGURACIÓN DEL PORFOLIO**
 
-Dentro de components se encontrara cada modulo de cada region junto a su Style
-Tarea-2\src\Components
+**Se configura el logo**
 
-Imagenes almacenadas de forma local / Si tiene links online solo usarlos en Data.json
-Tarea-2\public\Images
+>   public\vite.png
 
-Se puede reconfigurar quitar o agregar la posición de las secciones.
-Tarea-2\src\App.jsx
+**Se configura los datos que se mostraran**
+
+>   public\Json\Data.json
+
+**Configura los titulos, subtitulos y otros**
+
+>   src\Components\Languages\Translations.js
+
+**Dentro de components se encontrara cada módulo de cada región junto a su Style**
+
+>   src\Components
+
+**Imágenes almacenadas de forma local / Si tiene links online solo usarlos en Data.json**
+
+>   public\Images
+
+**Se puede reconfigurar las secciones.**
+
+>   src\App.jsx
