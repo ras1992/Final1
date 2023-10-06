@@ -10,6 +10,11 @@ https://www.behance.net/gallery/141518055/Portfolio-Website-Design/modules/79954
 
 # Final1
 
+# **Resumen**
+>Para el proyecto utilice React vite, chakra y node.js
+
+>Lo que más difícil me resultó fue el diseño responsive, lo primero que realicé fueron los módulos e ir controlando el correcto funcionamiento de la página, ya que el proyecto elegido solo es una imagen que se tenía que pasar a una página palpable. Pensando que actualmente se busca profesionales con conocimiento en inglés, agregue un desplegable que permite cambiar de idioma a placer, estas traducciones se encuentran en datos.js & translations.js que más abajo pueden ver con más detalle.
+
 
 # PORTFOLIO CONFIGURABLE BILINGÜE
 >[Ver Pagina](https://porfolio-react-chakra.netlify.app/)
